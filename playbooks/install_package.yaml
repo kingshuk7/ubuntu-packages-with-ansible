@@ -4,6 +4,6 @@
   tasks:
    - name: Install all the packages
      apt:
-         name: ['git', 'vim', 'openssh-client', 'ecryptfs-utils', 'cryptsetup', 'nextcloud-desktop', 'nautilus-nextcloud', 'clamav', 'clamav-daemon']
+         name: ['git', 'vim', 'openssh-client', 'ecryptfs-utils', 'cryptsetup', 'nextcloud-desktop', 'nautilus-nextcloud', 'clamav', 'clamav-daemon', 'thonny']
          state: present
          update_cache: True
