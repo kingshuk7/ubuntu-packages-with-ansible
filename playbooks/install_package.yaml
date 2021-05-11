@@ -1,15 +1,11 @@
 - hosts: all
   user: ansible
   become: True
+  become_method: sudo
   tasks:
    - name: Install all the packages
      apt:
-         name: ['git', 'vim', 'openssh-client', 'ecryptfs-utils', 'cryptsetup', 'nextcloud-desktop', 'nautilus-nextcloud', 'clamav', 'clamav-daemon', 'thonny']
+         name: ['git', 'vim', 'htop', 'itop', 'telnet', 'openssh-client', 'ecryptfs-utils', 'cryptsetup', 'nextcloud-desktop', 'nautilus-nextcloud', 'clamav', 'clamav-daemon', 'thonny', 'xpad', 'cpu-checker', 'qemu', 'qemu-kvm', 'libvirt-daemon', 'libvirt-clients', 'bridge-utils', 'virt-manager']
          state: present
          update_cache: True
-   - name: Download ID-Software
-     get_url:
-        url: "https://installer.id.ee/media/install-scripts/install-open-eid.sh"
-        dest: ~/Downloads/install-open-eid.sh
-   - name: Execute the script
-     shell: ~/Downloads/install-open-eid.sh
+         force_apt_get: True
