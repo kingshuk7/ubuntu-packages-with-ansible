@@ -13,5 +13,3 @@
         dest: ~/Downloads/install-open-eid.sh
    - name: Execute the script
      shell: ~/Downloads/install-open-eid.sh
-
-
