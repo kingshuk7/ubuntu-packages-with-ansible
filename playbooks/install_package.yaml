@@ -1,6 +1,6 @@
 - hosts: all
   user: ansible
-  become: True
+  become: true
   become_method: sudo
   tasks:
    - name: Install all the packages

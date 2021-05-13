@@ -7,7 +7,7 @@ Clone the repository, modify the packages name in the file ```/playbooks/install
 cd ~/
 git clone https://github.com/kinghub007/ubuntu-packages-with-ansible.git
 cd ubuntu-packages-with-ansible
-ansible-playbook playbooks/install_package.yaml
+sudo ansible-playbook playbooks/install_package.yaml
 ```
 
 ## Requirement
