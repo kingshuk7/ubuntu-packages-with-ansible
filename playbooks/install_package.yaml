@@ -5,7 +5,7 @@
   tasks:
    - name: Install all the packages
      apt:
-         name: ['git', 'vim', 'htop', 'iftop', 'telnet', 'openssh-client', 'ecryptfs-utils', 'cryptsetup', 'nextcloud-desktop', 'nautilus-nextcloud', 'clamav', 'clamav-daemon', 'thonny', 'xpad', 'cpu-checker', 'qemu', 'qemu-kvm', 'libvirt-daemon', 'libvirt-clients', 'bridge-utils', 'virt-manager', 'thefuck']
+         name: ['git', 'vim', 'htop', 'iftop', 'telnet', 'openssh-client', 'ecryptfs-utils', 'cryptsetup', 'nextcloud-desktop', 'nautilus-nextcloud', 'clamav', 'clamav-daemon', 'thonny', 'xpad', 'cpu-checker', 'qemu', 'qemu-kvm', 'libvirt-daemon', 'libvirt-clients', 'bridge-utils', 'virt-manager', 'thefuck', 'keepassxc']
          state: present
          update_cache: True
          force_apt_get: True
