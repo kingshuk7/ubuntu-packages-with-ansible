@@ -1,11 +1,10 @@
 - hosts: all
-  user: ansible
   become: true
   become_method: sudo
   tasks:
    - name: Install all the packages
      apt:
-         name: ['git', 'vim', 'htop', 'iftop', 'telnet', 'openssh-client', 'ecryptfs-utils', 'cryptsetup', 'nextcloud-desktop', 'nautilus-nextcloud', 'clamav', 'clamav-daemon', 'thonny', 'xpad', 'cpu-checker', 'qemu', 'qemu-kvm', 'libvirt-daemon', 'libvirt-clients', 'bridge-utils', 'virt-manager', 'thefuck', 'keepassxc']
+         name: ['fortune', 'curl', 'git', 'vim', 'htop', 'iftop', 'telnet', 'openssh-client', 'ecryptfs-utils', 'cryptsetup', 'clamav', 'clamav-daemon', 'thefuck', 'keepassxc', 'wget']
          state: present
          update_cache: True
          force_apt_get: True
