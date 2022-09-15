@@ -17,5 +17,7 @@ sudo apt-get install ansible
 ```
 2. `Python` needs to be installed on the cleint. For installing `Python`crun the below-mentioned command.
 ```bash
-ansible <remote_host> -u remote_user_name -m raw -a "sudo apt-get install python"
+ansible <remote_host> -u <remote_user> -m raw -a "sudo apt-get install python"
 ```
+## FYI
+The remote_user needs to have `sudo` privilege.
