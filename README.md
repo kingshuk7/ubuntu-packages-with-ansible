@@ -15,7 +15,7 @@ sudo ansible-playbook playbooks/install_package.yaml
 ```bash
 sudo apt-get install ansible
 ```
-2. `Python` needs to be installed on the cleint. For installing `Python`crun the below-mentioned command.
+2. `Python` needs to be installed on the client. For installing `Python`crun the below-mentioned command.
 ```bash
 ansible <remote_host> -u <remote_user> -m raw -a "sudo apt-get install python"
 ```
